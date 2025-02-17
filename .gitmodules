@@ -1,0 +1,3 @@
+[submodule "RAG-pipeline-for-BPLD-Dataset"]
+	path = RAG-pipeline-for-BPLD-Dataset
+	url = https://github.com/aaririri/RAG-pipeline-for-BPLD-Dataset
