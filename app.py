@@ -30,6 +30,11 @@ IMAGE_FOLDER = "BPLD Dataset"  ##### Input image folder here
 pipeline = None
 retriever = None
 
+def allowed_file(filename):
+    """Check if the uploaded file has an allowed extension"""
+    return '.' in filename and \
+           filename.rsplit('.', 1)[1].lower() in app.config['ALLOWED_EXTENSIONS']
+
 def create_index_html():
     """Create the index.html template with improved styling and JavaScript"""
     with open('templates/index.html', 'w') as f:
